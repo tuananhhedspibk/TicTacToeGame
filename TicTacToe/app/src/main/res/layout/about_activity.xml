@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:fitsSystemWindows="true"
+    tools:context=".MainActivity">
+
+    <android.support.v7.widget.Toolbar android:id="@+id/optionToolbar"
+        android:layout_width="match_parent" android:layout_height="50dp"
+        android:background="@color/colorGreen" app:popupTheme="@style/AppTheme.PopupOverlay">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TicTacToeGame"
+                android:textSize="27sp"
+                android:textColor="@android:color/white"
+                android:layout_marginLeft="65dp"
+                android:layout_centerVertical="true"/>
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.v7.widget.Toolbar android:id="@+id/copyrightToolbar"
+        android:layout_width="match_parent" android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorGreen" app:popupTheme="@style/AppTheme.PopupOverlay">
+    </android.support.v7.widget.Toolbar>
+    <include layout="@layout/content_about" />
+
+</RelativeLayout>
